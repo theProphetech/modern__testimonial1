@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "sitka";
+  src: url(/assests/Fonts/muli/Muli.ttf);
+}
+@font-face {
+  font-family: "paytone";
+  font-weight: 500;
+  src: url(/assests/Fonts/Paytone/PaytoneOne-Regular.ttf);
+}
+
+:root {
+  --body__bg: hsla(230, 10%, 90%, 1);
+  --testisect__bg: hsla(230, 10%, 98%, 1);
+  --text__size: 14px;
+  --heading__size: 33px;
+  --optional__size: 16px;
+  --text__clr: hsla(250, 50%, 15%, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sitka";
+  font-size: 14px;
+  color: var(--text__clr);
+}
+
+body {
+  min-height: 100dvh;
+  width: 100%;
+  background: var(--body__bg);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  padding: 3rem 0;
+}
+
+h1 {
+  color: var(--text__clr);
+  font-size: var(--heading__size);
+  letter-spacing: 1px;
+  font-family: "paytone";
+  margin-bottom: 6rem;
+}
+
+img {
+  display: block;
+}
+
+.col {
+  width: 100%;
+}
+
+h2 {
+    letter-spacing: 0.5px;
+  text-transform: capitalize;
+}

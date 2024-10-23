@@ -1,0 +1,125 @@
+.testimonial__section {
+  padding: 5rem 3rem 3rem 5rem;
+  width: calc(100% - 400px);
+  background: var(--testisect__bg);
+}
+
+.testimonials__con {
+  width: 100%;
+  display: flex;
+  align-items: top;
+}
+
+.testi__image__box {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  transition: padding 400ms ease-out;
+  width: max-content;
+  border-radius: 5px;
+  padding: 1.4rem 4rem 1.4rem 1.5rem;
+  cursor: pointer;
+}
+/* .testi__image__box:hover {
+  border: 2px solid hsla(45, 80%, 60%, 1);
+  padding-right: 5rem;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.03);
+  background: #fff;
+} */
+
+.active__img__box {
+  border: 2px solid hsla(45, 80%, 60%, 1);
+  padding-right: 5rem;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.03);
+  background: #fff;
+}
+.testi__img__con {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.testi__img__con > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.testi__details {
+  line-height: 25px;
+}
+
+.testi__details span {
+  text-transform: capitalize;
+  color: hsla(0, 5%, 50%, 1);
+  font-size: 13px;
+}
+.col__2 {
+  position: relative;
+}
+.rates__con {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.rate {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.rate > svg {
+  width: 15px;
+  height: 15px;
+  fill: hsla(45, 80%, 60%, 1);
+}
+.inner__para2 {
+  margin-top: 1rem;
+}
+
+.comments {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: transform 400ms ease-out;
+  opacity: 0;
+}
+/* .comments:nth-of-type(3){
+    opacity: 1;
+}
+.comments:nth-of-type(2){
+  opacity: 1;
+  } */
+.active__opacity {
+  transform: scale(1);
+  opacity: 1;
+}
+/* .comment__1 {
+  opacity: 1;
+} */
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 4rem 1rem;
+  }
+  h1 {
+    margin-bottom: 3rem;
+  }
+  .testimonial__section {
+    padding: 3rem 2rem;
+    min-height: 900px;
+    width: 100%;
+  }
+  .testimonials__con {
+    min-height: 100%;
+    flex-direction: column;
+  }
+
+  .col__2 {
+    margin-top: 2rem;
+  }
+}
