@@ -16,22 +16,22 @@
   justify-content: stretch;
   gap: 2rem;
   margin-bottom: 1.5rem;
-  transition: padding 400ms ease-out;
+  transition: padding 200ms ease-out;
   width: max-content;
   border-radius: 5px;
   padding: 1.4rem 4rem 1.4rem 1.5rem;
   cursor: pointer;
 }
-/* .testi__image__box:hover {
-  border: 2px solid hsla(45, 80%, 60%, 1);
-  padding-right: 5rem;
+.testi__image__box:hover {
+  border: 2px solid hsla(45, 80%, 80%, 1);
+  padding-right: 4rem;
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.03);
   background: #fff;
-} */
+}
 
 .active__img__box {
   border: 2px solid hsla(45, 80%, 60%, 1);
-  padding-right: 5rem;
+  padding-right: 4rem;
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.03);
   background: #fff;
 }
